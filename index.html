@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Trivia Game!</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <link rel="text/stylesheet" >
+  
+  
+  
+</head>
+
+<body>
+  <div class="container">
+    <!-- page 1 -->
+    <div id="page-1">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Trivia Time!</h1>
+        </div>
+      </div>
+
+      <!-- Start button -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <button id="start-button" type="button" class="btn btn-danger btn-lg">Start!</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- page 2 -->
+    <!-- Time Remaining -->
+    <div id="page-2">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Time remaining</h1>
+          <h3><span id="seconds-left"></span> seconds</h3>
+        </div>
+      </div>
+
+      <!-- Questions -->
+      <div class="row">
+        <!-- Question 1 -->
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              Q1. How many colors are there in a rainbow?
+            </div>
+            <div id="question-1" class="card-body">
+              <!-- answers -->
+              <form>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                  <label class="form-check-label" for="inlineRadio1">7</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+                  <label class="form-check-label" for="inlineRadio2">8</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
+                  <label class="form-check-label" for="inlineRadio3">9</label>
+                </div>
+              </form>
+              <!-- end answers -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              Q2. How many degrees are found in a circle?
+            </div>
+            <div id="question-2" class="card-body">
+              <!-- answers -->
+              <form>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                  <label class="form-check-label" for="inlineRadio1">360</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+                  <label class="form-check-label" for="inlineRadio2">720</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
+                  <label class="form-check-label" for="inlineRadio3">180</label>
+                </div>
+              </form>
+              <!-- end answers -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              Q3. What is the world's bigest island?
+            </div>
+            <div id="question-3" class="card-body">
+              <!-- answers -->
+              <form>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                  <label class="form-check-label" for="inlineRadio1">Norway</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+                  <label class="form-check-label" for="inlineRadio2">Madagascar</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
+                  <label class="form-check-label" for="inlineRadio3">Greenland</label>
+                </div>
+              </form>
+              <!-- end answers -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              Q4. Which city is the football team "Chiefs" from?
+            </div>
+            <div id="question-4" class="card-body">
+              <!-- answers -->
+              <form>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                  <label class="form-check-label" for="inlineRadio1">Kansas City, Kansas</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+                  <label class="form-check-label" for="inlineRadio2">Kansas City, Missouri</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
+                  <label class="form-check-label" for="inlineRadio3">St. Louis, Missouri</label>
+                </div>
+              </form>
+              <!-- end answers -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              Q5. What was the boss's name in the show "The Office"?
+            </div>
+            <div id="question-5" class="card-body">
+              <!-- answers -->
+              <form>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                  <label class="form-check-label" for="inlineRadio1">Ryan Howard</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+                  <label class="form-check-label" for="inlineRadio2">Jim Halpert</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
+                  <label class="form-check-label" for="inlineRadio3">Michael Scott</label>
+                </div>
+              </form>
+              <!-- end answers -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="col-12 text-center">
+          <button id="submit-answers" type="button" class="btn btn-danger btn-lg">Submit!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- page 3 -->
+    <div id="page-3">
+      <!-- summary screen -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>All done!</h1>
+          <h3>Correct answers: <span id="correct-answers"></span></h3>
+          <h3>Incorrect answers: <span id="incorrect-answers"></span></h3>
+          <h3>Unanswered: <span id="unanswered-answers"></span></h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
